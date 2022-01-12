@@ -85,10 +85,10 @@ function fetchBookmarks() {
     bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
   } else {
     // Create bookmarks object in localStorage
-    const id = `http://www.google.com.au`;
+    const id = `https://www.google.com.au`;
     bookmarks[id] = {
       name: 'Google',
-      url: 'http://www.google.com.au',
+      url: 'https://www.google.com.au',
     };
 
     localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
